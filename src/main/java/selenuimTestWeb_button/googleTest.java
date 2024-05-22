@@ -12,16 +12,15 @@ public class googleTest {
  
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-WebDriver driver = new ChromeDriver();
-driver.get("https://www.google.com");
-driver.manage().window().maximize();
-Thread.sleep(1000);
-driver.findElement(By.name("q")).sendKeys("Selenium Tutorials");
-Thread.sleep(1000);
-
-WebElement searchButton = driver.findElement(By.name("btnK"));
-searchButton.click();
-Thread.sleep(1000);
-driver.close();	
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.google.com");
+        driver.manage().window().maximize();
+        Thread.sleep(1000);
+        driver.findElement(By.name("q")).sendKeys("Selenium Tutorials");
+        Thread.sleep(1000);
+        WebElement searchButton = driver.findElement(By.name("btnK"));
+        searchButton.click();
+        Thread.sleep(1000);
+        driver.close();	
 }	
 }
