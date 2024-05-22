@@ -22,5 +22,5 @@ public class googleTest {
         searchButton.click();
         Thread.sleep(1000);
         driver.close();	
-}	
+        }	
 }
